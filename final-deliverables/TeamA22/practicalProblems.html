@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Autonomous Bomber
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ECE 592 Project - Autonomous Bomber">
+<style>
+body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
+h1{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
+h3{font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
+p {font-family:Arial, serif;font-size:16px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
+</style>
+</head>
+<body>
+<h1>Autonomous Bomber Practical Problems</h1>
+
+<h3>Hardware Problems</h3>
+<p>
+  1) Airframe <br>
+  Our project initially began with the team using the Volantex Ranger 757-3 airplane to conduct our bombing.
+  Due to imbalances caused by our installed hardware, the plane had difficulties achieving a successful loiter flight.
+  After hours of tuning the airplane to fly effectively, the team along decided to use the SAM4 drone to conduct our boming run.
+  This hardware problem cost the team weeks of development time as our progress was halted by the plane not flying well.
+  In addition to the plane not behaving as expected, the constant repairs in between flights slowly degraded the functionality of the plane.
+  <br>
+  <br>
+  2) Raspberry Pi power delivery <br>
+  The cables which powered the raspberry pi gave us a some problems as the raspberry pi displayed a low voltage warning when hooked up to a monitor.
+  This issue didn't have any significant consequences and the team proceeded using the same cable.
+  <br>
+  <br>
+  3) Dead gimbal <br>
+  The gimbal we receieved wouldn't power on when hooked up to the batteries.
+  After a few hours of debugging and resoldering our cables, a short was found coming from the power and ground wires from the gimbal control module.
+  This forced the team to pivot to using flat-mounted webcam instead of the gimbal on our payload.
+  The gimbal would have simplified math on the GCS end by eliminating the pitch and roll parameters.
+
+</p>
+
+<h3>Software Problems</h3>
+<p>
+  1) GSD Calculation <br>
+  Due to our gimbal not functioning properly, the team resorted to doing the ground sampling distance math in our code.
+  This involved using the current drone coordinates, pitch, roll, and altitude to calculate the exact coordinate of the target.
+  Due to a lack of testing, the calculation had some issues and some outlier coordinates were produced.
+  With more time and testing, the calculation could have been improved.
+
+  <br>
+  <br>
+  2) GCS Plotting Latency <br>
+  Once the GPS coordinate of the target was calculated, the coordinate was plotted on a scatterplot using Matplotlib.
+  This process however was time consuming and when multiple points were to be plotted, the GCS would experience some latency and we would have to wait for the GCS to populate before selecting a target to bomb.
+
+  <br>
+  <br>
+  3) GCS Stalling <br>
+  There were a few time during a our tests where the amount of points being plotted at once would eventually stall the program, forcing a re-do of our test.
+  The keyboard inputs to our GCS would also sometimes cause a stall.
+
+</p>
+</body>

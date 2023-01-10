@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <poly>
+    <PointLatLngAlt>
+      <Lat>35.728816397952031</Lat>
+      <Lng>-78.699274063110352</Lng>
+      <Alt>0</Alt>
+      <Tag />
+      <Tag2 />
+      <color />
+    </PointLatLngAlt>
+    <PointLatLngAlt>
+      <Lat>35.728816397952031</Lat>
+      <Lng>-78.695712089538574</Lng>
+      <Alt>0</Alt>
+      <Tag />
+      <Tag2 />
+      <color />
+    </PointLatLngAlt>
+    <PointLatLngAlt>
+      <Lat>35.725820252566777</Lat>
+      <Lng>-78.695669174194336</Lng>
+      <Alt>0</Alt>
+      <Tag />
+      <Tag2 />
+      <color />
+    </PointLatLngAlt>
+    <PointLatLngAlt>
+      <Lat>35.725785413004111</Lat>
+      <Lng>-78.69931697845459</Lng>
+      <Alt>0</Alt>
+      <Tag />
+      <Tag2 />
+      <color />
+    </PointLatLngAlt>
+  </poly>
+  <camera />
+  <alt>100</alt>
+  <angle>180.658555707534</angle>
+  <camdir>false</camdir>
+  <speed>12</speed>
+  <usespeed>false</usespeed>
+  <autotakeoff>true</autotakeoff>
+  <autotakeoff_RTL>true</autotakeoff_RTL>
+  <splitmission>1</splitmission>
+  <internals>false</internals>
+  <footprints>false</footprints>
+  <advanced>true</advanced>
+  <dist>41</dist>
+  <overshoot1>0</overshoot1>
+  <overshoot2>0</overshoot2>
+  <leadin>0</leadin>
+  <leadin2>0</leadin2>
+  <startfrom>Home</startfrom>
+  <overlap>50</overlap>
+  <sidelap>60</sidelap>
+  <spacing>0</spacing>
+  <crossgrid>false</crossgrid>
+  <spiral>false</spiral>
+  <copter_delay>0</copter_delay>
+  <copter_headinghold_chk>false</copter_headinghold_chk>
+  <copter_headinghold>181</copter_headinghold>
+  <copter_spline>false</copter_spline>
+  <alternateLanes>false</alternateLanes>
+  <minlaneseparation>0</minlaneseparation>
+  <clockwiseLaps>0</clockwiseLaps>
+  <laps>200</laps>
+  <matchPerimeter>false</matchPerimeter>
+  <trigdist>true</trigdist>
+  <digicam>false</digicam>
+  <repeatservo>false</repeatservo>
+  <breaktrigdist>true</breaktrigdist>
+  <repeatservo_no>5</repeatservo_no>
+  <repeatservo_pwm>1100</repeatservo_pwm>
+  <repeatservo_cycle>2</repeatservo_cycle>
+  <setservo_no>5</setservo_no>
+  <setservo_low>1100</setservo_low>
+  <setservo_high>1900</setservo_high>
+</GridData>

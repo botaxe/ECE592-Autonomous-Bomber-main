@@ -1,0 +1,101 @@
+<html><head>
+<title> Autonomous Bomber  </title>
+<link rel="stylesheet" type="text/css" href="../../../../course.css">
+</head>
+
+
+<body>
+
+
+<h1 align="center"> Autonomous Bomber </h1>
+
+<p> The goal of this project is to develop and demonstrate an autonomous bomber fixed wing aircraft that could be instructed to patrol an area and identify
+possible targets.  The vehicle would report the locations of such targets
+to a base station.  Upon authorization, the vehicle would begin to approach
+the target for a bombing run.  The vehicle would be able to drop a water
+balloon from a variable height and speed onto a target with a maximum size
+of 3x3 feet.  After performing the bombing run, the vehicle could resume
+its patrol or be instructed to land.
+
+</p><h4>Objectives:</h4> Several goals for this project are outlined
+below, along with various methods of achieving these goals.
+
+<h4>Goal #1 - Target Acquisition:</h4>
+<ul>
+ <li> Method #1: QR-Code identification - Vehicle searches an area for
+posterboard sized objects consisting of a circular target and a QR code.
+The vehicle would be trained to only report targets with a specific QR code.
+ </li><li> Method #2: Visual anomaly detection - Vehicle screens an area to identify
+objects on the ground that are easily distinguishable from their
+surroundings.  Examples include a piece of posterboard, a block tower, or a
+small ground UV.
+ </li><li> Method #3: IR/Thermal detection - Using a more advanced camera or sensor
+suite, the vehicle would search an area for objects that match a certain
+sensor profile.  The vehicle would attempt to automatically verify
+IR/Thermal readings using a regular camera.
+</li></ul>
+
+
+<h4>Goal #2 - Ground Station Authorization:</h4>
+<ul>
+ <li> Method #1: Multiple Targets, Live Tracking - Vehicle would update the
+ground station with photographs and estimated GPS locations of all targets
+it detects.  Targets and their current positions would be continuously
+tracked.  Ground station could authorize a bombing run or remove a target
+from the list.
+ </li><li> Method #2: Single Target, Tracking Locked - Vehicle would search its
+surroundings until it found an appropriate target, then begin to circle
+it.  If the target is capable of moving, the vehicle would follow it using
+an elliptical path.  Ground station can authorize a bombing run or tell the
+UAV to find a different target.
+</li></ul>
+
+<h4>Goal #3 - Autonomous Bombing Run:</h4>
+
+<ul>
+  <li>  Method #1: Dive bombing maneuver (ie Stuka
+<https: upload.wikimedia.org="" wikipedia="" commons="" b="" b6="" ju87v2.jpg="">) which
+would involve the UAV approaching the target at a steep angle before
+releasing the water balloon.  Target would be tracked using a camera along
+with a LIDAR unit for gauging distance.  This method would probably require
+a nimble air frame and a good control scheme + stabilzation systems.  High
+potential for catastrophic failures.  Some potential for being able to
+track moving targets.
+ </https:></li><li> Method #2: "High altitude" level bombing maneuver which would involve the
+UAV flying parallel with the ground and timing the release of the water
+balloon to strike the target.  Target would be tracked using a camera along
+with a LIDAR unit for gauging distance.  Vehicle speed and altitude would
+have to be carefully controlled to determine the proper time to release
+munitions.  Sabot or other stabilization system may be needed for the water
+balloon to reach the target.  Could probably perform this task using a
+multi-rotor UAV as well.
+</li></ul>
+
+
+
+<p>To successfully complete this project you need to have:
+</p><ul>
+  <li> Ability to fly a fixed wing.
+  </li><li> Visual recognition.
+  </li><li> Programming (Python/C).
+</li></ul>
+
+<h3>Status</h3>
+
+There was a
+<a href="https://people.engr.ncsu.edu/mlsichit/Teaching/492/Project/OldAndNewProjects/OldProjects/Spring2018/AutonomousBomber/index.html">
+  first iteration</a> at the project in 2018. Many things went well (plane flew well, the pixhawk was well setup, the code is decently commented, the release mechanism works well). Several things didn't work that well: the video detection was unreliable, the plane relied on wheels which worked very poorly at Dorothea Dix.
+
+
+<h3> Deliverables </h3>
+
+<ul>
+<li> Demonstration
+</li><li> Well commented code and schematics
+</li><li> Documentation for the resulting system
+</li><li> Report
+</li></ul>
+
+
+
+</body></html>
